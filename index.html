@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #415167;
+      --color-accent-1: #C7A17A;
+      --color-accent-2: #F9F5E8;
+      --color-dark-gray: #151D28;
+      --color-light-gray: #EDF0F5;
+      --color-primary-white: #FFFFFF;
+      --color-background-white: #F8FBFF;
+    }
+
+    @layer components {
+      .text-display-lg {
+        font-family: 'Montserrat', sans-serif;
+        @apply font-black text-[54px] leading-[70px];
+      }
+
+      .text-display-md {
+        font-family: 'Montserrat', sans-serif;
+        @apply font-black text-[30px] leading-[34px];
+      }
+
+      .text-title {
+        font-family: 'Nunito', sans-serif;
+        @apply font-bold text-[24px] leading-[28px];
+      }
+
+      .text-subtitle {
+        font-family: 'Nunito', sans-serif;
+        @apply font-semibold text-[20px] leading-[24px];
+      }
+
+      .text-price {
+        font-family: 'Nunito', sans-serif;
+        @apply font-semibold text-[20px] leading-[24px];
+      }
+
+      .text-body {
+        font-family: 'Nunito', sans-serif;
+        @apply font-normal text-[16px] leading-[20px];
+      }
+
+      .text-description {
+        font-family: 'Nunito', sans-serif;
+        @apply font-light italic text-[16px] leading-[20px];
+      }
+
+      .text-button {
+        font-family: 'Nunito', sans-serif;
+        @apply font-bold text-[16px] leading-[20px];
+      }
+    }
+  </style>
+
+  <title>Coffee Club</title>
+</head>
+
+<body>
+  <main class="bg-background-white">
+    <section class="flex justify-end relative">
+      <div class="relative">
+        <img src="assets/logo.png" class="h-20 w-auto mt-17 mr-30" alt="">
+        <div class="absolute bottom-20 left-0 text-display-lg">
+            <p class="text-primary">YOUR</p>
+            <p class="bg-accent-1 px-3">PERSONALIZED</p>
+            <p class="text-primary">COFFEE</p>
+        </div>
+      </div>
+      <img src="assets/img/preview.png" alt="Preview">
+      <aside class="flex flex-col gap-30 bg-primary pl-15 pr-20 pt-17">
+        <div class="relative">
+            <img src="assets/icons/shopping_cart.png" alt="" class="size-6">
+            <div class="absolute left-4 bottom-4 rounded-full bg-accent-1 text-body text-primary-white w-5 h-5 text-center">2</div>
+        </div>
+        <ul class="list-none text-light-gray space-y-4">
+            <li class="text-subtitle font-bold">TRANG CHỦ</li>
+            <li class="text-subtitle">COFFEE</li>
+            <li class="text-subtitle">PHIN MẠ MÀU</li>
+            <li class="text-subtitle">COMBO PHIN PHÊ</li>
+            <li class="text-subtitle">GIFTSET</li>
+            <li class="text-subtitle">LIÊN HỆ</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="flex flex-col items-center py-20 gap-20">
+        <div class="flex flex-col items-center">
+            <p class="text-body text-primary">Your Personalized Coffee</p>
+            <p class="text-display-md text-primary">COFFEE BUILD YOUR BASE</p>
+        </div>
+
+        <div class="flex flex-row gap-20">
+            <div class="flex flex-col items-center gap-8">
+                <img src="assets/icons/coffee_shop.png" alt="">
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-title">Nguồn gốc</p>
+                    <div class="text-center">
+                        <p class="text-description">Những hạt cà phê Arabica,</p>
+                        <p class="text-description">Robusta đạt chất lượng theo</p>
+                        <p class="text-description">tiêu chuẩn quốc tế.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-8">
+                <img src="assets/icons/coffee_plank.png" alt="">
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-title">Chất lượng</p>
+                    <div class="text-center">
+                        <p class="text-description">Từng một hạt cà phê là cả một </p>
+                        <p class="text-description">quá trình tập trung cao độ của</p>
+                        <p class="text-description">nghệ nhân cà phê.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-8">
+                <img src="assets/icons/coffee_cups.png" alt="">
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-title">Các loại hạt</p>
+                    <div class="text-center">
+                        <p class="text-description">70% chất lượng tách cà phê</p>
+                        <p class="text-description">đến từ nguồn gốc và chất lượng</p>
+                        <p class="text-description">green bean.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-8">
+                <img src="assets/icons/coffee_machine.png" alt="">
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-title">Pha chế</p>
+                    <div class="text-center">
+                        <p class="text-description">Những hạt cà phê được lột xác</p>
+                        <p class="text-description">qua quá trình rang xay kỹ lưỡng</p>
+                        <p class="text-description">và nghiêm ngặt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col items-center py-20 gap-20 relative h-210 overflow-hidden">
+        <div class="absolute left-0 top-0 w-100 h-210 bg-primary z-0"></div>
+
+        <div class="flex flex-col items-center">
+            <p class="text-body text-primary">Choose Your Favorite</p>
+            <p class="text-display-md text-primary">CHUẨN GU ĐÚNG VỊ</p>
+        </div>
+
+        <div class="grid grid-cols-3 absolute left-25 top-50 gap-4 w-max z-10">
+            <div class="flex flex-row shadow">
+                <img src="assets/img/coffee_blue.png" alt="" class="bg-light-gray">
+                <div class="flex flex-col w-88 gap-9 p-10 bg-primary-white">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-price text-accent-1">99.000</p>
+                        <p class="text-title">REVO Morning</p>
+                    </div>
+                    <p class="text-body">đắng, hậu ngọt, hương hoa</p>
+                    <div class="flex flex-row gap-8 justify-between items-center">
+                        <p class="bg-accent-1 px-4 py-1 rounded-full text-subtitle text-primary-white">MUA NGAY</p>
+                        <p class="text-subtitle">CHI TIẾT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-row shadow">
+                <img src="assets/img/coffee_yellow.png" alt="" class="bg-light-gray">
+                <div class="flex flex-col w-88 gap-9 p-10 bg-primary-white">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-price text-accent-1">99.000</p>
+                        <p class="text-title">REVO Morning</p>
+                    </div>
+                    <p class="text-body">đắng, hậu ngọt, hương hoa</p>
+                    <div class="flex flex-row gap-8 justify-between items-center">
+                        <p class="bg-accent-1 px-4 py-1 rounded-full text-subtitle text-primary-white">MUA NGAY</p>
+                        <p class="text-subtitle">CHI TIẾT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-row shadow">
+                <img src="assets/img/coffee_brown.png" alt="" class="bg-light-gray">
+                <div class="flex flex-col w-88 gap-9 p-10 bg-primary-white">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-price text-accent-1">99.000</p>
+                        <p class="text-title">REVO Morning</p>
+                    </div>
+                    <p class="text-body">đắng, hậu ngọt, hương hoa</p>
+                    <div class="flex flex-row gap-8 justify-between items-center">
+                        <p class="bg-accent-1 px-4 py-1 rounded-full text-subtitle text-primary-white">MUA NGAY</p>
+                        <p class="text-subtitle">CHI TIẾT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-row shadow">
+                <img src="assets/img/coffee_brown.png" alt="" class="bg-light-gray">
+                <div class="flex flex-col w-88 gap-9 p-10 bg-primary-white">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-price text-accent-1">99.000</p>
+                        <p class="text-title">REVO Morning</p>
+                    </div>
+                    <p class="text-body">đắng, hậu ngọt, hương hoa</p>
+                    <div class="flex flex-row gap-8 justify-between items-center">
+                        <p class="bg-accent-1 px-4 py-1 rounded-full text-subtitle text-primary-white">MUA NGAY</p>
+                        <p class="text-subtitle">CHI TIẾT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-row shadow">
+                <img src="assets/img/coffee_blue.png" alt="" class="bg-light-gray">
+                <div class="flex flex-col w-88 gap-9 p-10 bg-primary-white">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-price text-accent-1">99.000</p>
+                        <p class="text-title">REVO Morning</p>
+                    </div>
+                    <p class="text-body">đắng, hậu ngọt, hương hoa</p>
+                    <div class="flex flex-row gap-8 justify-between items-center">
+                        <p class="bg-accent-1 px-4 py-1 rounded-full text-subtitle text-primary-white">MUA NGAY</p>
+                        <p class="text-subtitle">CHI TIẾT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-row shadow">
+                <img src="assets/img/coffee_yellow.png" alt="" class="bg-light-gray">
+                <div class="flex flex-col w-88 gap-9 p-10 bg-primary-white">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-price text-accent-1">99.000</p>
+                        <p class="text-title">REVO Morning</p>
+                    </div>
+                    <p class="text-body">đắng, hậu ngọt, hương hoa</p>
+                    <div class="flex flex-row gap-8 justify-between items-center">
+                        <p class="bg-accent-1 px-4 py-1 rounded-full text-subtitle text-primary-white">MUA NGAY</p>
+                        <p class="text-subtitle">CHI TIẾT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute top-60 left-296 w-15 h-15 rounded-full bg-accent-1
+                        flex items-center justify-center
+                        text-display-md text-primary-white">
+                →
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col py-20 gap-20 relative h-210 overflow-hidden">
+        <div class="absolute left-0 top-0 w-280 h-210 bg-light-gray"></div>
+
+        <div class="flex flex-col items-center">
+            <p class="text-body text-primary">Best Gift For Best Friend</p>
+            <p class="text-display-md text-primary">GIFTSET</p>
+        </div>
+
+        <div class="flex flex-row justify-end w-200 bg-primary-white shadow self-end mr-50 relative">
+            <div class="flex flex-col gap-6 p-16">
+                <div class="flex flex-col gap-3">
+                    <p class="text-accent-1 text-subtitle">285.000</p>
+                    <p class="text-title">Giftset "Cà phê phin Việt Nam"</p>
+                    <div class="flex flex-col">
+                        <p>Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê</p>
+                        <p>được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí</p>
+                        <p>quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình</p>
+                        <p>yêu, sự đam mê của người làm cà phê… tạo ra những tách cà</p>
+                        <p>phê tinh khiết chỉ dành riêng cho bạn.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-row gap-4">
+                        <img src="assets/icons/coffee_grain.png" alt="">
+                        <div class="flex flex-col">
+                            <p class="text-body text-primary">Loại hạt</p>
+                            <p class="text-subtitle text-primary">Fine Robusta Blend</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-4">
+                        <img src="assets/icons/mountains.png" alt="">
+                        <div class="flex flex-col">
+                            <p class="text-body text-primary">Độ cao</p>
+                            <p class="text-subtitle text-primary">700 - 800m</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-8 justify-between items-center">
+                    <p class="bg-accent-1 px-4 py-1 rounded-full text-subtitle text-primary-white">MUA NGAY</p>
+                    <p class="text-subtitle">CHI TIẾT</p>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="flex justify-center items-center shadow h-1/3 p-8">
+                    <p class="text-display-md text-primary">1</p>
+                </div>
+                <div class="flex justify-center items-center shadow h-1/3 p-8">
+                    <p class="text-display-md text-primary">2</p>
+                </div>
+                <div class="flex justify-center items-center shadow h-1/3 p-8">
+                    <p class="text-display-md text-primary">3</p>
+                </div>
+            </div>
+
+            <img src="assets/img/coffee_example.png" alt="" class="absolute right-150 top-10">
+        </div>
+    </section>
+
+    <section class="flex flex-col items-center py-20 gap-20 relative h-210 overflow-hidden">
+        <div class="absolute right-0 top-0 w-100 h-210 bg-primary z-0"></div>
+
+        <div class="flex flex-col items-center">
+            <p class="text-body text-primary">Your Personalized Coffee</p>
+            <p class="text-display-md text-primary">COMBO PHIN PHÊ</p>
+        </div>
+
+        <div class="flex flex-row absolute left-40 top-50 gap-4 w-max z-10">
+            <div class="flex flex-col shadow">
+                <img src="assets/img/coffee_brown_clear.png" alt="" class="bg-light-gray">
+                <div class="flex flex-col w-90 gap-9 p-10 bg-primary-white">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-row gap-3 items-center">
+                            <p class="text-accent-1 text-subtitle">147.000</p>
+                            <p class="text-description line-through">155.000</p>
+                        </div>
+                        <p class="text-title">Combo Revo Đậm Đà</p>
+                        <div>
+                            <p class="text-body">Hàm lượng caffein trong Revo Đậm Đà</p>
+                            <p class="text-body">đủ mạnh để làm bạn tỉnh táo làm việc...</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-8 justify-between items-center">
+                        <p class="bg-accent-1 px-4 py-1 rounded-full text-subtitle  text-primary-white">MUA NGAY</p>
+                        <p class="text-subtitle">CHI TIẾT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col shadow">
+                <img src="assets/img/coffee_brown_clear.png" alt="" class="bg-light-gray">
+                <div class="flex flex-col w-90 gap-9 p-10 bg-primary-white">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-row gap-3 items-center">
+                            <p class="text-accent-1 text-subtitle">147.000</p>
+                            <p class="text-description line-through">155.000</p>
+                        </div>
+                        <p class="text-title">Combo Revo Đậm Đà</p>
+                        <div>
+                            <p class="text-body">Hàm lượng caffein trong Revo Đậm Đà</p>
+                            <p class="text-body">đủ mạnh để làm bạn tỉnh táo làm việc...</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-8 justify-between items-center">
+                        <p class="bg-accent-1 px-4 py-1 rounded-full text-subtitle  text-primary-white">MUA NGAY</p>
+                        <p class="text-subtitle">CHI TIẾT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col shadow">
+                <img src="assets/img/coffee_brown_clear.png" alt="" class="bg-light-gray">
+                <div class="flex flex-col w-90 gap-9 p-10 bg-primary-white">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-row gap-3 items-center">
+                            <p class="text-accent-1 text-subtitle">147.000</p>
+                            <p class="text-description line-through">155.000</p>
+                        </div>
+                        <p class="text-title">Combo Revo Đậm Đà</p>
+                        <div>
+                            <p class="text-body">Hàm lượng caffein trong Revo Đậm Đà</p>
+                            <p class="text-body">đủ mạnh để làm bạn tỉnh táo làm việc...</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-8 justify-between items-center">
+                        <p class="bg-accent-1 px-4 py-1 rounded-full text-subtitle  text-primary-white">MUA NGAY</p>
+                        <p class="text-subtitle">CHI TIẾT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col shadow">
+                <img src="assets/img/coffee_brown_clear.png" alt="" class="bg-light-gray">
+                <div class="flex flex-col w-90 gap-9 p-10 bg-primary-white">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-row gap-3 items-center">
+                            <p class="text-accent-1 text-subtitle">147.000</p>
+                            <p class="text-description line-through">155.000</p>
+                        </div>
+                        <p class="text-title">Combo Revo Đậm Đà</p>
+                        <div>
+                            <p class="text-body">Hàm lượng caffein trong Revo Đậm Đà</p>
+                            <p class="text-body">đủ mạnh để làm bạn tỉnh táo làm việc...</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-8 justify-between items-center">
+                        <p class="bg-accent-1 px-4 py-1 rounded-full text-subtitle  text-primary-white">MUA NGAY</p>
+                        <p class="text-subtitle">CHI TIẾT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute top-60 left-273 w-15 h-15 rounded-full bg-accent-1
+                        flex items-center justify-center
+                        text-display-md text-primary-white">
+                →
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="bg-light-gray text-description text-primary text-center py-3">© Revo Coffee Việt Nam - 2018</p>
+  </footer>
+</body>
+</html>
