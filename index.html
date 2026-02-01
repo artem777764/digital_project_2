@@ -71,93 +71,104 @@
   <main class="bg-background-white">
     
     <section id="home" class="relative flex flex-col md:flex-row w-full">
-    <div class="hidden md:flex absolute top-0 left-0 z-20 p-8 lg:p-12">
-        <img src="assets/logo.png" class="h-16 lg:h-20 w-auto" alt="">
-    </div>
-
-    <div class="hidden md:flex absolute bottom-20 left-0 z-20 p-8 lg:p-12">
-        <div class="text-display-md md:text-display-lg text-primary">
-        <p class="text-primary">YOUR</p>
-        <p class="bg-accent-1 px-3 py-1 my-1 inline-block">PERSONALIZED</p>
-        <p class="text-primary">COFFEE</p>
+        <div class="hidden md:flex absolute top-0 left-0 z-20 p-8 lg:p-12">
+            <img src="assets/logo.png" class="h-16 lg:h-20 w-auto" alt="Logo">
         </div>
-    </div>
-    
-    <div class="md:hidden flex flex-col items-center pt-6 px-4 z-10">
-        <img src="assets/logo.png" class="h-14 w-auto mb-4" alt="Logo">
-        <div class="text-center">
-        <p class="text-display-md text-primary">YOUR</p>
-        <p class="bg-accent-1 px-3 py-1 my-1 inline-block text-display-md">PERSONALIZED</p>
-        <p class="text-display-md text-primary">COFFEE</p>
-        </div>
-    </div>
 
-    <div class="flex flex-col md:flex-row w-full">
-        <div class="relative w-full md:w-3/4 lg:w-4/5">
-        <div class="relative h-[60vh] md:h-auto">
-            <img 
-            src="assets/img/preview.png" 
-            alt="Coffee Preview" 
-            class="w-full h-full object-cover md:object-contain md:object-right"
-            >
+        <div class="hidden md:flex absolute bottom-20 left-0 z-20 p-8 lg:p-12">
+            <div class="text-display-md md:text-display-lg text-primary">
+                <p class="text-primary">YOUR</p>
+                <p class="bg-accent-1 px-3 py-1 my-1 inline-block">PERSONALIZED</p>
+                <p class="text-primary">COFFEE</p>
+            </div>
         </div>
         
-        <div class="md:hidden absolute top-6 right-6 bg-primary rounded-full p-3 shadow-lg z-20">
-            <div class="relative">
-            <img src="assets/icons/shopping_cart.png" alt="Cart" class="w-6 h-6">
-            <div class="absolute -top-2 -right-2 rounded-full bg-accent-1 text-[12px] text-primary-white w-5 h-5 flex items-center justify-center">
-                2
+        <div class="md:hidden flex items-center justify-between px-4 py-4 z-30 relative">
+            <button id="menuToggle" class="w-10 h-10 flex items-center justify-center" 
+                    aria-label="Меню" aria-expanded="false">
+                <span class="sr-only">Открыть меню</span>
+                <div class="relative w-6 h-5">
+                    <span class="absolute top-0 left-0 w-full h-0.5 bg-primary transition-all duration-300"></span>
+                    <span class="absolute top-1/2 left-0 w-full h-0.5 bg-primary -translate-y-1/2 transition-all duration-300"></span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary transition-all duration-300"></span>
+                </div>
+            </button>
+
+            <img src="assets/logo.png" class="h-10 w-auto absolute left-1/2 -translate-x-1/2" alt="Logo">
+
+            <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-primary">
+                <img src="assets/icons/shopping_cart.png" alt="Cart" class="w-5 h-5">
+                <div class="absolute -top-1 -right-1 rounded-full bg-accent-1 text-[12px] text-primary-white w-5 h-5 flex items-center justify-center">
+                    2
+                </div>
             </div>
-            </div>
-        </div>
         </div>
 
-        <aside class="flex flex-col w-full md:w-1/4 lg:w-1/5 bg-primary py-8 px-6 md:px-8 lg:px-10 md:py-12">
-        <div class="hidden md:block mb-12 lg:mb-16">
-            <div class="relative inline-block">
-            <img src="assets/icons/shopping_cart.png" alt="Cart" class="w-8 h-8 lg:w-10 lg:h-10">
-            <div class="absolute -top-2 -right-2 rounded-full bg-accent-1 text-body text-primary-white w-6 h-6 flex items-center justify-center">
-                2
-            </div>
+        <div class="md:hidden flex flex-col items-center px-4 pb-6 z-10">
+            <div class="text-center">
+                <p class="text-display-md text-primary">YOUR</p>
+                <p class="bg-accent-1 px-3 py-1 my-1 inline-block text-display-md">PERSONALIZED</p>
+                <p class="text-display-md text-primary">COFFEE</p>
             </div>
         </div>
 
-        <nav>
-            <ul class="space-y-4 md:space-y-6 lg:space-y-8">
-            <li>
-                <a href="#home" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white font-bold block py-2">
-                TRANG CHỦ
-                </a>
-            </li>
-            <li>
-                <a href="#coffee" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white block py-2">
-                COFFEE
-                </a>
-            </li>
-            <li>
-                <a href="#stuff" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white block py-2">
-                PHIN MẠ MÀU
-                </a>
-            </li>
-            <li>
-                <a href="#giftset" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white block py-2">
-                GIFTSET
-                </a>
-            </li>
-            <li>
-                <a href="#combo" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white block py-2">
-                COMBO PHIN PHÊ
-                </a>
-            </li>
-            <li>
-                <a href="#footer" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white block py-2">
-                LIÊN HỆ
-                </a>
-            </li>
-            </ul>
-        </nav>
-        </aside>
-    </div>
+        <div class="flex flex-col md:flex-row w-full">
+            <div class="relative w-full md:w-3/4 lg:w-4/5">
+                <div class="relative h-[60vh] md:h-auto">
+                    <img 
+                        src="assets/img/preview.png" 
+                        alt="Coffee Preview" 
+                        class="w-full h-full object-cover md:object-contain md:object-right"
+                    >
+                </div>
+            </div>
+
+            <aside id="mainNav" class="fixed md:relative top-0 left-0 h-screen md:h-auto w-full md:w-1/4 lg:w-1/5 bg-primary py-8 px-6 md:px-8 lg:px-10 md:py-12 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-40 overflow-y-auto">
+                <div class="hidden md:block mb-12 lg:mb-16">
+                    <div class="relative inline-block">
+                        <img src="assets/icons/shopping_cart.png" alt="Cart" class="w-8 h-8 lg:w-10 lg:h-10">
+                        <div class="absolute -top-2 -right-2 rounded-full bg-accent-1 text-body text-primary-white w-6 h-6 flex items-center justify-center">
+                            2
+                        </div>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul class="space-y-4 md:space-y-6 lg:space-y-8">
+                        <li>
+                            <a href="#home" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white font-bold block py-2">
+                                TRANG CHỦ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#coffee" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white block py-2">
+                                COFFEE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#stuff" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white block py-2">
+                                PHIN MẠ MÀU
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#giftset" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white block py-2">
+                                GIFTSET
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#combo" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white block py-2">
+                                COMBO PHIN PHÊ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="text-subtitle md:text-[18px] lg:text-[20px] text-light-gray hover:text-primary-white block py-2">
+                                LIÊN HỆ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
     </section>
 
     <section id="coffee" class="flex flex-col items-center py-20 gap-20">
@@ -790,5 +801,27 @@
     <p class="bg-light-gray text-description text-primary text-center py-3">© Revo Coffee Việt Nam - 2018</p>
   </footer>
   
+  <button
+    id="scrollTop"
+    aria-label="Наверх"
+    class="
+        fixed bottom-[20px] left-1/2 -translate-x-1/2
+        w-[52px] h-[52px]
+        bg-primary text-primary-white
+        rounded-full text-[22px]
+        flex items-center justify-center
+        shadow-[0_4px_12px_rgba(0,0,0,0.3)]
+        opacity-0 invisible
+        transition-all duration-300
+        hover:scale-110
+        active:scale-95
+        z-[999]
+        md:hidden
+    "
+    >
+    ↑
+    </button>
+
+  <script src="menu.js"></script>
 </body>
 </html>
